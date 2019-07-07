@@ -118,8 +118,8 @@ public extension Bitmap {
     }
     
     subscript(x: Int, y: Int) -> Color {
-        get { return pixels[y * width + x] }
-        set { pixels[y * width + x] = newValue }
+        get { return pixels[x * width + y] }
+        set { pixels[x * width + y] = newValue }
     }
 
     init(width: Int, height: Int, color: Color) {
